@@ -2,13 +2,20 @@
 
 > **Problem Statement 07:** Centralized Institutional Repository for Documenting, Authenticating, and Showcasing Verified Student & Faculty Achievements.
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-merithub.onrender.com-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://merithub.onrender.com)
+
 [![React](https://img.shields.io/badge/React-19.0-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-6.0-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Express](https://img.shields.io/badge/Express-5.2-000000?logo=express&logoColor=white)](https://expressjs.com/)
 [![SQLite](https://img.shields.io/badge/SQLite-WAL%20Mode-003B57?logo=sqlite&logoColor=white)](https://sqlite.org/)
-[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-v3-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-v4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Security Hardened](https://img.shields.io/badge/Security-PBKDF2%20%2B%20HMAC--SHA256-success)](#-enterprise-security--authentication)
 [![Accreditation Ready](https://img.shields.io/badge/Accreditation-NAAC%20%26%20NIRF%20Ready-blueviolet)](#-institutional-analytics--accreditation-reporting)
+
+---
+
+> 🚀 **Live Production URL:** **[https://merithub.onrender.com](https://merithub.onrender.com)**  
+> 💡 **Quick Judge Evaluation:** Click the link above to test the live platform. Use the top **Judge Demo Bar** to switch between **Student**, **Faculty**, **Verifier**, and **Admin** with zero password typing required!
 
 ---
 
@@ -202,6 +209,9 @@ erDiagram
 ---
 
 ## 📡 REST API Reference
+
+> **Production Base URL:** `https://merithub.onrender.com/api`  
+> **Local Base URL:** `http://localhost:5000/api`
 
 | Method | Endpoint | Access / Role | Description |
 | :--- | :--- | :--- | :--- |
