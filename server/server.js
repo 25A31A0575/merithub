@@ -251,7 +251,7 @@ function buildFilterClause(reqQuery) {
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'ok',
-    message: 'Digital Student & Faculty Achievement Showcase Backend is running!',
+    message: 'MeritHub Backend API is running!',
     database: 'connected (SQLite)',
     timestamp: new Date().toISOString()
   });

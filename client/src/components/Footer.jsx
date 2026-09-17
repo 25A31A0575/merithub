@@ -12,7 +12,7 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white">
                 <Award className="w-5 h-5" />
               </div>
-              <span className="font-bold text-white text-base">Pragati University Repository</span>
+              <span className="font-bold text-white text-base">MeritHub Repository</span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
               Designed for Problem Statement 07: Transforming scattered certificates and awards into a
@@ -64,7 +64,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© 2026 Pragati University • Digital Achievement Showcase</p>
+          <p>© 2026 MeritHub • Student & Faculty Achievement Platform</p>
           <p>Built for College Hackathon — Problem Statement 07</p>
         </div>
       </div>

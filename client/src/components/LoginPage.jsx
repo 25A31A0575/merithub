@@ -328,7 +328,7 @@ export default function LoginPage({ onLoginSuccess, onExploreShowcase }) {
 
       {/* Footer */}
       <footer className="py-4 text-center text-[11px] text-slate-500 border-t border-slate-800/50">
-        © 2026 Pragati University • Problem Statement 07: Digital Student & Faculty Achievement Showcase
+        © 2026 MeritHub • Student & Faculty Achievement Platform
       </footer>
     </div>
   );

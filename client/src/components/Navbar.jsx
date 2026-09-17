@@ -76,7 +76,7 @@ export default function Navbar({
           <div>
             <div className="flex items-center gap-2">
               <span className="font-extrabold text-base sm:text-xl tracking-tight text-white">
-                Pragati <span className="text-blue-400">University</span>
+                Merit<span className="text-blue-400">Hub</span>
               </span>
               <span className="hidden lg:inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/30">
                 <ShieldCheck className="w-3 h-3 text-emerald-400" />
@@ -84,7 +84,7 @@ export default function Navbar({
               </span>
             </div>
             <p className="text-[11px] sm:text-xs text-slate-400 font-medium tracking-wide hidden sm:block">
-              Centralized Student & Faculty Achievement Showcase
+              Student & Faculty Achievement Platform
             </p>
           </div>
         </div>
