@@ -292,7 +292,7 @@ export default function SubmitForm({
         <div className="mb-8 border-b border-slate-800 pb-6">
           <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-400 mb-1">
             <Award className="w-4 h-4 text-blue-400" />
-            <span>Problem Statement 07 Module</span>
+            <span>Institutional Verification Portal</span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-white">
             Submit New Achievement

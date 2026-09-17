@@ -15,8 +15,7 @@ export default function Footer() {
               <span className="font-bold text-white text-base">MeritHub Repository</span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Designed for Problem Statement 07: Transforming scattered certificates and awards into a
-              centralized, authenticated, and verifiable showcase for students and faculty.
+              Transforming scattered certificates and awards into a centralized, authenticated, and verifiable showcase for students and faculty.
             </p>
           </div>
 
@@ -65,7 +64,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>© 2026 MeritHub • Student & Faculty Achievement Platform</p>
-          <p>Built for College Hackathon — Problem Statement 07</p>
+          <p>Institutional Merit & Accreditation Platform</p>
         </div>
       </div>
     </footer>

@@ -274,7 +274,7 @@ export default function LoginPage({ onLoginSuccess, onExploreShowcase }) {
                 </span>
               </div>
               <p className="text-xs text-slate-400 mb-5 leading-relaxed">
-                Click any profile card below to sign in instantly with full role authorization. Evaluates Problem Statement 07 without manual typing.
+                Click any profile card below to sign in instantly with full role authorization without manual typing.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">

@@ -9,11 +9,6 @@ export default function Hero({ onExploreClick }) {
       <div className="absolute top-1/3 right-10 w-80 h-80 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Institutional Pill Tag */}
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-300 mb-6 shadow-sm">
-          <span className="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-          Problem Statement 07: Centralized Digital Repository
-        </div>
 
         {/* Hero Heading */}
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">

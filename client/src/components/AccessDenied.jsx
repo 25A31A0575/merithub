@@ -43,7 +43,7 @@ export default function AccessDenied({
         <div className="p-4 rounded-2xl bg-slate-950/60 border border-slate-800/80 text-left mb-6 text-xs space-y-2">
           <div className="flex items-center gap-2 text-slate-200 font-semibold text-[11px] uppercase tracking-wider">
             <ShieldCheck className="w-4 h-4 text-emerald-400" />
-            <span>Problem Statement 07 Trust Policy:</span>
+            <span>Institutional Trust & Verification Policy:</span>
           </div>
           <p className="text-slate-400 text-[11px] leading-relaxed">
             To prevent fraud and maintain accreditation compliance, students and unauthorized users cannot approve, reject, or scrutinize submissions.
