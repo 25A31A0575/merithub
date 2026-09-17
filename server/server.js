@@ -9,7 +9,14 @@ const db = require('./database/db');
 require('./database/seed');
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
+
+function getBaseUrl(req) {
+  if (process.env.BASE_URL) return process.env.BASE_URL;
+  const protocol = req.headers['x-forwarded-proto'] || req.protocol;
+  const host = req.headers['x-forwarded-host'] || req.get('host');
+  return `${protocol}://${host}`;
+}
 
 const crypto = require('crypto');
 const JWT_SECRET = process.env.JWT_SECRET || 'pragati-university-achievement-portal-secret-2026';
@@ -754,7 +761,7 @@ app.post('/api/achievements/:id/resubmit', authenticate, (req, res) => {
 
       let newCertUrl = achievement.certificate_url;
       if (req.file) {
-        newCertUrl = `http://localhost:5000/uploads/${req.file.filename}`;
+        newCertUrl = `${getBaseUrl(req)}/uploads/${req.file.filename}`;
       }
 
       const cleanTitle = sanitizeInput(title);
@@ -893,7 +900,7 @@ app.post('/api/achievements', authenticate, (req, res) => {
         });
       }
 
-      const certificateUrl = `http://localhost:5000/uploads/${req.file.filename}`;
+      const certificateUrl = `${getBaseUrl(req)}/uploads/${req.file.filename}`;
 
       const insertAch = db.prepare(`
         INSERT INTO achievements (
@@ -1020,11 +1027,23 @@ app.get('/api/users', (req, res) => {
   }
 });
 
+// Serve built frontend assets in production (if client/dist exists)
+const clientDistPath = path.join(__dirname, '../client/dist');
+if (fs.existsSync(clientDistPath)) {
+  app.use(express.static(clientDistPath));
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api') || req.path.startsWith('/uploads')) {
+      return next();
+    }
+    res.sendFile(path.join(clientDistPath, 'index.html'));
+  });
+}
+
 // Start the server
 app.listen(PORT, () => {
-  console.log(`Server is running smoothly on http://localhost:${PORT}`);
-  console.log(`Health check: http://localhost:${PORT}/api/health`);
-  console.log(`Public Stats: http://localhost:${PORT}/api/stats`);
-  console.log(`Analytics API: http://localhost:${PORT}/api/analytics`);
-  console.log(`CSV Export: http://localhost:${PORT}/api/reports/export-csv`);
+  console.log(`Server is running smoothly on port ${PORT}`);
+  console.log(`Health check: /api/health`);
+  console.log(`Public Stats: /api/stats`);
+  console.log(`Analytics API: /api/analytics`);
+  console.log(`CSV Export: /api/reports/export-csv`);
 });

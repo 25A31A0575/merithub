@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Clock, History, Shield, User, X } from 'lucide-react';
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api';
 
 export default function AuditLogsModal({ achievement, onClose }) {
   const [logs, setLogs] = useState([]);

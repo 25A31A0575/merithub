@@ -1,0 +1,12 @@
+{
+  "name": "merithub",
+  "version": "1.0.0",
+  "description": "MeritHub — Centralized Student & Faculty Achievement Repository",
+  "scripts": {
+    "build": "npm install --prefix server && npm install --prefix client && npm run build --prefix client",
+    "start": "node server/server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

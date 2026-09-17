@@ -16,7 +16,7 @@ import AccessDenied from './components/AccessDenied';
 import Footer from './components/Footer';
 import { AlertCircle, CheckSquare, PlusCircle, RefreshCw, Trophy } from 'lucide-react';
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api';
 
 export default function App() {
   // Navigation View State: 'showcase' | 'submit' | 'my-submissions' | 'verifier' | 'analytics' | 'login'

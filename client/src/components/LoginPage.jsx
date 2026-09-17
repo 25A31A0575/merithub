@@ -16,6 +16,8 @@ import {
   EyeOff
 } from 'lucide-react';
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api';
+
 const DEMO_ACCOUNTS = [
   {
     role: 'student',
@@ -81,7 +83,7 @@ export default function LoginPage({ onLoginSuccess, onExploreShowcase }) {
     setError('');
 
     try {
-      const res = await fetch('http://localhost:5000/api/auth/login', {
+      const res = await fetch(`${API_BASE_URL}/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: email.trim(), password: password.trim() })
@@ -107,7 +109,7 @@ export default function LoginPage({ onLoginSuccess, onExploreShowcase }) {
     setError('');
 
     try {
-      const res = await fetch('http://localhost:5000/api/auth/demo-switch', {
+      const res = await fetch(`${API_BASE_URL}/auth/demo-switch`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ role: demoAccount.role })
