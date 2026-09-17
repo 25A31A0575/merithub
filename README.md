@@ -1,6 +1,6 @@
 # 🏆 MeritHub — Centralized Digital Student & Faculty Achievement Repository
 
-> **Problem Statement** Centralized Institutional Repository for Documenting, Authenticating, and Showcasing Verified Student & Faculty Achievements.
+> Centralized Institutional Repository for Documenting, Authenticating, and Showcasing Verified Student & Faculty Achievements.
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-merithub.onrender.com-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://merithub.onrender.com)
 
